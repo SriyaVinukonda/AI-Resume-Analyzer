@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      color: #111;
+      margin: 40px;
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .title {
+      font-size: 14px;
+      color: #444;
+      margin-top: 4px;
+    }
+
+    .section {
+      margin-top: 22px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .summary {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #222;
+    }
+
+    .skills p {
+      font-size: 12px;
+      margin: 4px 0;
+    }
+
+    .entry {
+      margin-bottom: 12px;
+    }
+
+    .entry-title {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .entry-subtitle {
+      font-size: 11.5px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 6px 0;
+    }
+
+    li {
+      font-size: 11.8px;
+      line-height: 1.45;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name">{{ name }}</div>
+    <div class="title">{{ title }}</div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary">{{ summary }}</p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section skills">
+    <div class="section-title">Skills</div>
+    {% for category, items in skills.items() %}
+      <p><b>{{ category }}:</b> {{ ", ".join(items) }}</p>
+    {% endfor %}
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+    {% for exp in experience %}
+      <div class="entry">
+        <div class="entry-title">{{ exp.role }} – {{ exp.company }}</div>
+        <div class="entry-subtitle">{{ exp.duration }}</div>
+        <ul>
+          {% for bullet in exp.bullets %}
+            <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+    {% for project in projects %}
+      <div class="entry">
+        <div class="entry-title">{{ project.name }}</div>
+        <ul>
+          <li>{{ project.description }}</li>
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    {% for edu in education %}
+      <div class="entry">
+        <div class="entry-title">{{ edu.degree }}</div>
+        <div class="entry-subtitle">{{ edu.college }} | {{ edu.year }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+pdfplumber
+python-docx
+fastapi
+uvicorn
+python-multipart
+pdfplumber
+python-dotenv
+google-generativeai
+

@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+.bolt/
+
+# Env
+.env
+
+# Generated files
+*.pdf

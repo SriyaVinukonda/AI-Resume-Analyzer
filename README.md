@@ -4,7 +4,8 @@ An AI-powered resume analysis and enhancement platform that evaluates resumes ag
 Built with FastAPI + React + Gemini AI + ReportLab.
 
 
-✨ Features
+
+✨ FEATURES
 
 📊 ATS compatibility scoring (overall + section-wise)
 🧠 AI resume enhancement using Gemini
@@ -15,7 +16,8 @@ Built with FastAPI + React + Gemini AI + ReportLab.
 📥 One-click enhanced resume download
 
 
-🧠 How It Works
+
+🧠 HOW IT WORKS
 
 1) Upload resume (PDF)
 2) Paste job description
@@ -30,7 +32,8 @@ Built with FastAPI + React + Gemini AI + ReportLab.
 - AI-enhanced resume
 - Downloadable PDF
 
-🏗️ Tech Stack
+
+🏗️ TECH STACK
 
 Frontend:
    React + TypeScript
@@ -42,7 +45,8 @@ Backend:
    ReportLab (PDF generation)
    Python NLP utilities
 
-🎯 Use Cases
+
+🎯 USE CASES
 
 * Students optimizing resumes
 * Job seekers targeting roles
@@ -50,7 +54,8 @@ Backend:
 * Resume improvement automation
 * Career coaching tools
 
-🚀 Future Improvements
+
+🚀 FUTURE IMPROVEMENTS
 
 - Multi-resume comparison
 - LinkedIn import
@@ -59,12 +64,14 @@ Backend:
 - Cloud deployment
 - Recruiter dashboard
 
-👩‍💻 Author
+
+👩‍💻 AUTHOR
 
 Sriya Vinukonda
 AI/ML Engineer & Developer
 GitHub: https://github.com/SriyaVinukonda
 Linkedin: www.linkedin.com/in/30s3
+
 
 ⭐ If you like this project
 Star ⭐ the repo!
